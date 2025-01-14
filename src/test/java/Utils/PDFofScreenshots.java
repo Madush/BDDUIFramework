@@ -72,7 +72,7 @@ public class PDFofScreenshots {
 
         try (PDPageContentStream contentStream = new PDPageContentStream(document, page)) {
             // Add scenario name
-            contentStream.setFont(PDType1Font.HELVETICA_BOLD, 12);
+            contentStream.setFont(PDType1Font.HELVETICA_BOLD, 11);
             contentStream.beginText();
             contentStream.newLineAtOffset(50, 750);
             contentStream.showText("Scenario: " + screenshotPath.getFileName().toString());
